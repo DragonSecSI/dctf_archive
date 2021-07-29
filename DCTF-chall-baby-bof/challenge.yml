@@ -1,0 +1,24 @@
+name: "Baby bof"
+author: "NOx"
+category: Pwn
+
+description: |
+  It's just another bof.
+  nc dctf-chall-baby-bof.westeurope.azurecontainer.io 7481
+value: 250
+
+
+files:
+  - app/baby_bof
+  - Dockerfile
+
+flags:
+  - dctf{D0_y0U_H4v3_A_T3mpl4t3_f0R_tH3s3}
+
+tags:
+  - Pwn
+  - BOF
+
+state: visible
+  
+version: "0.1"

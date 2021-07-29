@@ -1,0 +1,21 @@
+name: "Hänsel und Gretel"
+author: "zeski"
+category: Reverse
+
+description: |
+  Just follow the bits.
+value: 400
+type: standard
+
+files:
+  - hansel_und_gretel
+
+flags:
+  - dctf{1_gu3ss_1t_wasnt_h1dden_w33l_enough}
+
+tags:
+  - rev
+
+state: visible
+  
+version: "0.1"

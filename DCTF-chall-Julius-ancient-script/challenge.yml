@@ -1,0 +1,15 @@
+name: "Julius' ancient script"
+author: "Draxand0"
+category: Crypto
+description: |
+  I found this Ancient Roman **papyrus**. Could you decypher it for me?
+value: 100
+type: standard
+files:
+  - Files/flag.txt
+flags:
+  - dctf{Th3_d13_h4s_b33n_c4st}
+tags:
+  - crypto
+state: visible
+version: "0.1"

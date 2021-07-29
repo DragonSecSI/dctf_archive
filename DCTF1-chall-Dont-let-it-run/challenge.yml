@@ -1,0 +1,26 @@
+name: "Don't let it run"
+author: "Xorpy"
+category: Misc
+
+description: |
+  PDF documents can contain unusual objects within.
+
+value: 100
+type: standard
+
+files:
+  - src/dragon.pdf
+
+flags:
+  - dctf{pdf_1nj3ct3d}
+
+tags:
+  - misc
+
+state: visible
+
+hints:
+  - # Obfuscated JavaScript
+  
+version: "0.1"
+

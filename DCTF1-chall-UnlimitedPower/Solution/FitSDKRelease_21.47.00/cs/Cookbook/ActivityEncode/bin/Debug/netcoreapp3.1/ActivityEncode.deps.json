@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ActivityEncode/1.0.0": {
+        "dependencies": {
+          "Dynastream.Fit.Portable": "21.47.0.0"
+        },
+        "runtime": {
+          "ActivityEncode.dll": {}
+        }
+      },
+      "Dynastream.Fit.Portable/21.47.0.0": {
+        "runtime": {
+          "Dynastream.Fit.Portable.dll": {
+            "assemblyVersion": "21.47.0.0",
+            "fileVersion": "21.47.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ActivityEncode/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dynastream.Fit.Portable/21.47.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

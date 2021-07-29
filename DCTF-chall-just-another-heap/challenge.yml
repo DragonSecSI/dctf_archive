@@ -1,0 +1,23 @@
+name: "Just another heap"
+author: "NOx"
+category: Pwn
+
+description: |
+  There is so many ways you can pwn this. \
+  ```nc dctf-chall-just-another-heap.westeurope.azurecontainer.io 7481```
+value: 500
+
+files:
+  - app/just_another_heap
+  - Dockerfile
+
+flags:
+  - dctf{I_h4V3_0_id3a_h0W_y0u_G0T_h3r3}
+
+tags:
+  - Pwn
+  - Heap
+
+state: visible
+  
+version: "0.1"

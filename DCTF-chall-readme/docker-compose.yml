@@ -1,0 +1,6 @@
+version: '3.6'
+services:
+  readme:
+    build: .
+    ports:
+      - 40005:7481

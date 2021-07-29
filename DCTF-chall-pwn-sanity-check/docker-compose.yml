@@ -1,0 +1,6 @@
+version: '3.6'
+services:
+  pwn_sanity_check:
+    build: .
+    ports:
+      - 40004:7480

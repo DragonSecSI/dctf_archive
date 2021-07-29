@@ -1,0 +1,29 @@
+name: "Extraterrestrial Communication"
+author: "Riggle"
+category: Misc
+
+description: |
+  Aliens have recently landed on the moon and are attempting to communicate with us.
+  Can you figure out what they are trying to tell us?
+
+value: 200
+type: standard
+
+files:
+  - ./A_message_from_outer_space.mp3
+
+flags:
+  - dctf{wHat_ev3n_1s_SSTV}
+
+hints:
+  - "On a completely unrelated note, do you know how the first picture from the moon was transmitted?",
+  - Advanced technology
+
+
+tags:
+  - misc
+  - mp3
+
+state: visible
+
+version: "1"

@@ -1,0 +1,25 @@
+name: "Strong password"
+author: "Riggle"
+category: Crypto
+
+description: |
+  Zip file with a password. I wonder what the password could be?
+
+value: 100
+type: standard
+
+files:
+  - ./strong_password.zip
+
+flags:
+  - dctf{r0cKyoU_f0r_tHe_w1n}
+
+tags:
+  - crypto
+  - file
+  - zip
+  - password
+
+state: visible
+
+version: "1"

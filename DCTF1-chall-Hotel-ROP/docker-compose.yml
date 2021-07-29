@@ -1,0 +1,6 @@
+version: '3.6'
+services:
+    hotel_rop:
+        build: .
+        ports:
+            - 40003:7480

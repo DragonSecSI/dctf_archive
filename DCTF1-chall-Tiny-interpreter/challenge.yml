@@ -1,0 +1,22 @@
+name: "Tiny interpreter"
+author: "zeski"
+category: Reverse
+
+description: |
+  We wrote an interpreter just so we can run our own binaries. Can you figure it out?
+value: 400
+type: standard
+
+files:
+  - interpreter
+  - bin
+
+flags:
+  - dctf{Interpreter_written_in_C_is_a_great_idea}
+
+tags:
+  - rev
+
+state: visible
+  
+version: "0.1"

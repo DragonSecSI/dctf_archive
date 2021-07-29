@@ -1,0 +1,27 @@
+name: "Just In Time"
+author: "Xorpy"
+category: Reverse
+
+description: |
+  Don't fall in (rabbit) holes
+
+value: 300
+type: standard
+
+files:
+  - src/justintime
+
+flags:
+  - dctf{df77dbe0c407dd4a188e12013ccb009f}
+
+tags:
+  - binary
+  - rev
+
+state: visible
+
+hints:
+  - If you think you found the flag, look again. What is fread used for?
+  
+version: "0.1"
+

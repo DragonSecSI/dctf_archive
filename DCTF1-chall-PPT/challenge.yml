@@ -1,0 +1,24 @@
+name: "Powerpoint programming"
+author: "zeski"
+category: Misc
+
+description: |
+  A login page in powerpoint should be good enough, right?
+
+  Flag is not in format. All caps letters.
+value: 200
+type: standard
+
+files:
+  - chall.ppsx
+
+flags:
+  - DCTF{PPT_1SNT_V3RY_S3CUR3_1S_1T}
+
+tags:
+  - misc
+  - powerpoint
+
+state: visible
+  
+version: "0.1"

@@ -1,0 +1,11 @@
+FROM ghcr.io/linuxserver/openssh-server:latest
+
+ENV TZ=Europe/Ljubljana
+ENV PUBLIC_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC6lDuGHLQBBHQtExmA/8qXoneXb5T7CnVjJUHygNi+yUTcBdTeKDBfYs5iAb8kgdDlQjYb/QW7mI8+KSHcmhQAEYXI/BawEueiF0EG2m99EumuFsGWwrCNl8skitF7H6xIWRxP3NWzVUfgl9wkBt4E0r9pB0ypzWLglDXGxCfLhkftNl4JcGKAr335XTkL4Q1FLW5aL2LGBxsxYIIEexOrQqXkUh8+9UlUGvTvlt/sN0BFJFRbH8W0pUyVZ7+cZRPP97O7aM7Hr2R36G+3NfUlWR5j4AWLst21ra01of/ySK3OhcokL7oD4tBfKeaNB0f1EayDtDKAWM+8hyDATwsewy3rY4pwjHksweVbiW8sr8RkyetbW/wP6LGu/ow7OF4Wh9TaCYMs0znsNiuPKWGu0ofNSY+LvfAm4dJo5gJLqNVjQQXhSFbKhXoZnKQWE43j/Lrg+m/q/bRXe9t6qXyLanPEacdaNpgcuLhWOvyTPPARh6UiJ4938zrjo+4jOdQdReNnUV+SEFnCYTTruBMEZVu3mc8v4lcZLOKfXFbZUKncEbsKi4BnqEKbvaAdl19UtV1vl6YrrfSl/idHVqXmGV44QEH5nWWaAuDaTAAmivgh1b9BnenyLLdkYzthYOb9cSNI0lROhL4O/tfyYCQdZxsPYrFgfO7mirO+4K9jKQ=="
+ENV SUDO_ACCESS=false
+ENV PASSWORD_ACCESS=false
+ENV USER_NAME=user
+
+RUN echo -e "\ndctf{Y0u_Are_N0w_Br34thing_M4nua11y}\n" > /etc/nologin.txt
+RUN echo "usermod --shell /sbin/nologin $USER_NAME" >> /etc/cont-init.d/10-adduser
+EXPOSE 2222

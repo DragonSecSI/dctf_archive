@@ -1,0 +1,19 @@
+name: "Favourite Color"
+author: "jerdnA"
+category: Reverse
+
+description: |
+  Maybe you have the same favourite color as someone else...
+  http://dctf1-chall-favcolor.westeurope.azurecontainer.io:8080
+value: 300
+type: standard
+
+flags:
+  - dctf{taste_the_2209_rainbow}
+
+tags:
+  - reverse
+
+state: visible
+
+version: "1.0"

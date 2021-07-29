@@ -1,0 +1,28 @@
+name: "Cartooner"
+author: "amedic"
+category: Web
+
+description: |
+  Social media of all the best-known cartoon characters!
+  #cartoonnetwork
+  ### ADD LINK HERE ###
+
+value: 300
+type: standard
+
+#files:
+
+flags:
+  - dctf{wh0a_M4M4!_a5635d90b}
+
+tags:
+  - web
+  - time
+
+state: visible 
+
+hints:
+  - Inspector Gadget.
+  - Cookie monster.
+  
+version: "0.1"

@@ -1,0 +1,6 @@
+version: '3.6'
+services:
+  baby_bof:
+    build: .
+    ports:
+      - 40003:7481

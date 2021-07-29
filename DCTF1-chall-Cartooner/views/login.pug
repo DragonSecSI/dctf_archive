@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    p Login as a Guest
+    form(action="/login", method="post").form-signin
+        .mb-3
+            label(for="username").sr-only Ime:
+            input(type="text", name="username", placeholder="Name").form-control
+        button(type="submit").btn.btn-primary Login

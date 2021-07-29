@@ -1,0 +1,24 @@
+name: "A Simple SP Box!"
+author: "zeski"
+category: Crypto
+
+description: |
+    It's just a simple SP-box, 150 tries should be enough for you.\
+    ```nc dctf1-chall-sp-box.westeurope.azurecontainer.io 8888```
+  
+value: 300
+
+files:
+  - src/sp_box.py
+
+flags:
+  - dctf{S0_y0u_f0und_th3_cycl3s_in_th3_s_b0x}
+
+tags:
+  - crypto
+
+state: visible
+
+
+  
+version: "0.1"

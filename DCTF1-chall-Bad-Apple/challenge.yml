@@ -1,0 +1,27 @@
+name: "Bad Apple"
+author: "Riggle"
+category: Misc
+
+description: |
+  Someone stumbled upon this file in a secure server. What could it mean?
+
+value: 200
+type: standard
+
+files:
+  - ./Bad_Apple.mp4
+
+flags:
+  - dctf{sp3ctr0gr4msAreCo0l}
+
+hints:
+  - Did you even listen to the song?
+
+tags:
+  - misc
+  - mp4
+  - video
+
+state: visible
+
+version: "1"

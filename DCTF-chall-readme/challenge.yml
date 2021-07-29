@@ -1,0 +1,22 @@
+name: "Readme"
+author: "NOx"
+category: Pwn
+
+description: |
+  Read me to get the flag.
+  nc dctf-chall-readme.westeurope.azurecontainer.io 7481
+value: 150
+
+files:
+  - app/readme
+
+flags:
+  - dctf{n0w_g0_r3ad_s0me_b00k5}
+
+tags:
+  - Pwn
+  - Format
+
+state: visible
+  
+version: "0.1"

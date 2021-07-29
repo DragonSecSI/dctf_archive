@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Multi Stage Filter</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/page.css">
+    </head>    
+    <body>
+        <div id="main-col">
+            <div id="title">
+                <h1>Favourite colors!</h1>
+            </div>
+            <form id="fav-color-form" action="/getfav" method="POST">
+                <input type="text" placeholder="Enter your name" name="name" pattern="([A-Z]|[a-z])+" title="Only ascii letters" required>
+                <input type="number" placeholder="Enter your favourite number" name="number" title="Only digits from 0 to 9" required>
+                <div>
+                    <input id="submit-btn" type="submit" value="Search">
+                </div>
+            </form>
+            {{ RESPONSE }}
+            <div id="marketing">
+                We are very proud of our Open Source code and invite you to check it out by clicking the button below.
+            </div>
+            <div id="toggle-lable-wrapper">
+                <label for=cb id="toggle-lable">Code</label>
+            </div>
+            <input type='checkbox' style='display: none' id=cb>
+            <div id="code">
+                <pre style="margin: 0px;">package main
+
+import (
+    &quot;fmt&quot;
+    &quot;io/ioutil&quot;
+    &quot;log&quot;
+    &quot;math&quot;
+    &quot;net/http&quot;
+    &quot;strconv&quot;
+    &quot;strings&quot;
+)
+
+// ================================================================ //
+// Constants
+// ================================================================ //
+var colors = [8]string{
+    &quot;red&quot;, &quot;orange&quot;, &quot;yellow&quot;, &quot;green&quot;, &quot;blue&quot;, &quot;indigo&quot;, &quot;violet&quot;,
+}
+var arrays = [8]([256]uint64){}
+var maxVal = ^uint64(0)
+
+// ================================================================ //
+// Web Stuff
+// ================================================================ //
+func preparePage(color, err string) string {
+    body, _ := ioutil.ReadFile(&quot;./page.html&quot;)
+    if color != &quot;&quot; {
+        return strings.Replace(
+            string(body),
+            &quot;{{ RESPONSE }}&quot;,
+            fmt.Sprintf(
+                `&lt;div id=&quot;response&quot; class=&quot;color-%s&quot;&gt;
+                Your favourite color is %s!&lt;/div&gt;`,
+                color,
+                color,
+            ),
+            1,
+        )
+    } else if err != &quot;&quot; {
+        return strings.Replace(
+            string(body),
+            &quot;{{ RESPONSE }}&quot;,
+            `&lt;div id=&quot;response&quot; class=&quot;error&quot;&gt;Access
+            denied.&lt;br&gt;Error ID: dctf{xxxxxxxxxxxxxxxxxxxxxx}&lt;/div&gt;`,
+            1,
+        )
+    } else {
+        return strings.Replace(string(body), &quot;{{ RESPONSE }}&quot;, &quot;&quot;, 1)
+    }
+}
+func page(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, &quot;%s&quot;, preparePage(&quot;&quot;, &quot;&quot;))
+}
+func style(w http.ResponseWriter, r *http.Request) {
+    http.ServeFile(w, r, &quot;./page.css&quot;)
+}
+func icon(w http.ResponseWriter, r *http.Request) {
+    http.ServeFile(w, r, &quot;./favicon.ico&quot;)
+}
+func favcolor(w http.ResponseWriter, r *http.Request) {
+    r.ParseForm()
+    ln, _ := strconv.ParseUint(r.PostFormValue(&quot;number&quot;), 10, 64)
+    name := r.PostFormValue(&quot;name&quot;)
+    if !rateLimit(name, ln) {
+        fmt.Fprintf(w, &quot;%s&quot;, preparePage(getColor(name, ln), &quot;&quot;))
+    } else {
+        fmt.Fprintf(w, &quot;%s&quot;, preparePage(&quot;&quot;, &quot;forbidden&quot;))
+    }
+}
+
+// ================================================================ //
+// Backend Stuff
+// ================================================================ //
+func getColor(name string, luckynum uint64) string {
+    sum := 0
+    h := hash(name, luckynum)
+    for _, val := range h {
+        sum += int(val)
+    }
+    return colors[sum%7]
+}
+func hash(name string, ln uint64) [8]byte {
+    name = fmt.Sprintf(&quot;%8v&quot;, name)
+    h := [8]byte{}
+    for i := 0; i &lt; 8; i++ {
+        l := (ln % uint64(math.Pow10(8-i))) / uint64(math.Pow10(7-i))
+        h[i] = byte((uint64(name[i])*13 + l) % 256)
+    }
+    return h
+}
+func rateLimit(name string, luckynum uint64) bool {
+    indices := hash(name, luckynum)
+    numMaxedOut := 0
+    for i := 0; i &lt; 8; i++ {
+        if arrays[i][indices[i]] == maxVal {
+            numMaxedOut++
+        }
+    }
+    if numMaxedOut == 8 {
+        return true
+    }
+    for i := 0; i &lt; 8; i++ {
+        arrays[i][indices[i]]++
+    }
+    return false
+}
+func initArrays() {
+    for i := 0; i &lt; 8; i++ {
+        for j := 0; j &lt; 256; j++ {
+            arrays[i][j] = 0
+        }
+    }
+    arrays[0][94] = maxVal
+    arrays[1][124] = maxVal
+    arrays[2][237] = maxVal
+    arrays[3][26] = maxVal
+    arrays[4][94] = maxVal
+    arrays[5][141] = maxVal
+    arrays[6][87] = maxVal
+    arrays[7][202] = maxVal
+}
+
+// ================================================================ //
+// Main
+// ================================================================ //
+func main() {
+    initArrays()
+    http.HandleFunc(&quot;/&quot;, page)
+    http.HandleFunc(&quot;/page.css&quot;, style)
+    http.HandleFunc(&quot;/favicon.ico&quot;, icon)
+    http.HandleFunc(&quot;/getfav&quot;, favcolor)
+    log.Fatal(http.ListenAndServe(&quot;:8080&quot;, nil))
+}</pre>
+            </div>
+            <pre style="font-size: 18px;">{{ LOG }}</pre>
+        </div>
+    </body>
+</html>

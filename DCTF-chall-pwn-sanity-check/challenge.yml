@@ -1,0 +1,22 @@
+name: "Pwn sanity check"
+author: "NOx"
+category: Pwn
+
+description: |
+  This should take about 1337 seconds to solve.
+  nc dctf-chall-pwn-sanity-check.westeurope.azurecontainer.io 7480
+value: 100
+
+files:
+  - app/pwn_sanity_check
+
+flags:
+  - dctf{Ju5t_m0v3_0n}
+
+tags:
+  - Pwn
+  - BOF
+
+state: visible
+  
+version: "0.1"

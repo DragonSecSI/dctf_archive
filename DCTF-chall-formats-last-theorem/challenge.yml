@@ -1,0 +1,24 @@
+name: "Formats last theorem"
+author: "NOx"
+category: Pwn
+
+description: |
+  I dare you to hook the malloc
+  `nc dctf-chall-formats-last-theorem.westeurope.azurecontainer.io 7482`
+  
+value: 400
+
+files:
+  - app/formats_last_theorem
+  - Dockerfile
+
+flags:
+  - dctf{N0t_all_7h30r3ms_s0und_Th4t_g00d}
+
+tags:
+  - Pwn
+  - Format_string
+
+state: visible
+  
+version: "0.1"

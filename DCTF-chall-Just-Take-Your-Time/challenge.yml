@@ -1,0 +1,28 @@
+name: "Just Take Your Time"
+author: "Bannek"
+category: Crypto
+
+description: |
+  Let's go. In and out. 2 second adventure.
+  
+  ```nc dctf-chall-just-take-your-time.westeurope.azurecontainer.io 9999```
+# add nc link
+value: 200
+type: standard
+
+files:
+  - src/just-take-your-time.py
+
+flags:
+  - dctf{1t_0n1y_t0Ok_2_d4y5...}
+
+tags:
+  - crypto
+  - time
+
+state: visible
+
+hints:
+  - While this may not be pwn, its tools may still be quite handy.
+  
+version: "0.1"

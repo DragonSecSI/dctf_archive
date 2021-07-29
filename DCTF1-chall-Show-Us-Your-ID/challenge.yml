@@ -1,0 +1,26 @@
+name: "Show us your ID"
+author: "Xorpy"
+category: Misc
+
+description: |
+  Analysis of a PDF file. Beware of rabbit holes.
+
+value: 200
+type: standard
+
+files:
+  - src/nyan.pdf
+
+flags:
+  - dctf{3b0ba4}
+
+tags:
+  - misc
+
+state: visible
+
+hints:
+  - solution is not the most obvious one, but simple. PDF tools might not be most useful. Need to inspect deeper. Knowledge of PDF objects is helpful
+  
+version: "0.1"
+

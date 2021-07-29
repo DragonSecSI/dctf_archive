@@ -1,0 +1,28 @@
+
+name: "Unlimited Power"
+author: "ThePr0gramm3r"
+category: Reverse
+description: Are you strong enough for this one?
+value: 200
+type: standard
+
+
+flags:
+    - dctf{H4ck_mY_Ftp}
+
+tags:
+    - reverse
+
+files:
+    - UnlimitedPower.prg
+
+
+hints:
+    - First, just run it.
+
+
+state: visible
+
+
+version: "0.1"
+

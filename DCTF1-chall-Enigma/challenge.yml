@@ -1,0 +1,27 @@
+name: "Scooby-Doo"
+author: "zeski"
+category: Crypto
+
+description: |
+  What's the name of the van?
+  
+  You have to fill in the braces yourself: DCTFWHATEVERGOESHERE -> DCTF{WHATEVERGOESHERE}.
+
+value: 200
+type: standard
+
+files:
+  - cipher.txt
+
+flags:
+  - DCTF{TURINGWOULDBEPROUD}
+
+tags:
+  - crypto
+
+hints:
+  - 1 flag, 10000 settings
+
+state: visible
+  
+version: "0.1"

@@ -1,0 +1,24 @@
+name: "Data Recovery"
+author: "Riggle"
+category: Crypto
+
+description: |
+  You found an old hard drive in a dumpster. After days of data recovery, you successfuly read a couple of files. Looks like it contains some sensitive information. Can you find it?
+
+value: 400
+type: standard
+
+files:
+  - ./recovered_data.zip
+
+flags:
+  - dctf{x0r_eNcRypt1on_brUt3foRce}
+
+tags:
+  - crypto
+  - file
+  - unknown format
+
+state: visible
+
+version: "1"

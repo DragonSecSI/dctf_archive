@@ -1,0 +1,46 @@
+include partials/mixins
+- var error_messages = error_messages || []
+head
+    title Cartooner
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/public/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/public/css/bootstrap-grid.min.css")
+    link(rel="stylesheet", href="/public/css/bootstrap-reboot.min.css")
+    
+    block scripts
+
+body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        a(href="#").navbar-brand Cartooner
+        
+        div.collapse.navbar-collapse.d-block#navbarSupportedContent
+            if isAdmin
+                <form class="form-inline my-2 has-clear" action="/admin/posts" method="post" id="searchFrom">
+                    <input class="form-control mr-sm-2" type="search" id="postsSearch" placeholder="Search" aria-label="Search" name="search">
+                    <span id="searchclear" class="form-control-clear glyphicon glyphicon-remove form-control-feedback hidden"></span>
+                    <input hidden value="mysql" name="sql">
+                    <input hidden value="0" name="debug">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search posts</button>
+                </form>
+        if user
+            button(type="button")#logout-button.btn.btn-outline-secondary.my-2.my-sm-0 Logout
+        else if !hideLoginRedirect
+            button(type="button")#login-button.btn.btn-outline-primary.my-2.my-sm-0 Login
+    
+    main.col-12.py-md-3.bd-content.container(role="main")
+        for error in error_messages
+            +errorPopup(error)
+        if isAdmin && dbgtext
+            span.debug Debug: #{dbgtext}
+                
+        block content
+    
+    div.footer
+        //- a(href="https://www.pexels.com" target="_blank")
+            p Images by Pexels
+    script(src="/public/js/jquery-3.6.0.min.js")
+    script(src="/public/js/popper.min.js")
+    script(src="/public/js/bootstrap.min.js")
+    script(src="/public/js/header.js")
+    block footerScripts

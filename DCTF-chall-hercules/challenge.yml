@@ -1,0 +1,21 @@
+name: "Hercules"
+author: "Zen"
+category: Reverse
+
+description: |
+  From his foot, we can measure him
+  nc ???
+value: 400
+
+files:
+  - hercules
+
+flags:
+  - dctf{x_p3de_h3rc00lem}
+
+tags:
+  - Rev
+
+state: visible
+  
+version: "0.1"

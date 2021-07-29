@@ -1,0 +1,13 @@
+node_modules/
+tmp/
+build/
+dist/
+
+.env
+
+*.rest
+
+database/
+db/
+
+src/config/config.json

@@ -1,0 +1,23 @@
+name: "Private Encryption Mistake"
+author: "Miha M."
+category: Crypto
+
+description: What's this? You seem like you have intercepted a part of something you should not have... (user@dctf1-chall-private-encryption-mistake.westeurope.azurecontainer.io port 2222)
+value: 300
+type: standard
+
+files:
+  - blurred.png
+
+flags:
+  - dctf{Y0u_Are_N0w_Br34thing_M4nua11y}
+
+tags:
+  - crypto
+
+state: visible
+
+#hints:
+#  - It's not a file half empty, but a file half full.
+  
+version: "1.0"

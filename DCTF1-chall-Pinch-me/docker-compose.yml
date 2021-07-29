@@ -1,0 +1,6 @@
+version: '3.6'
+services:
+  pinch_me:
+    build: .
+    ports:
+      - 40004:7480

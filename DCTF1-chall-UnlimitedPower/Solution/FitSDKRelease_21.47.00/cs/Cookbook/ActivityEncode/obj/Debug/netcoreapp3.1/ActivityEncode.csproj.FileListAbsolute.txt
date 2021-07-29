@@ -1,0 +1,16 @@
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\bin\Debug\netcoreapp3.1\ActivityEncode.exe
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\bin\Debug\netcoreapp3.1\ActivityEncode.deps.json
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\bin\Debug\netcoreapp3.1\ActivityEncode.runtimeconfig.json
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\bin\Debug\netcoreapp3.1\ActivityEncode.runtimeconfig.dev.json
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\bin\Debug\netcoreapp3.1\ActivityEncode.dll
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\bin\Debug\netcoreapp3.1\ActivityEncode.pdb
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\bin\Debug\netcoreapp3.1\Dynastream.Fit.Portable.dll
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\bin\Debug\netcoreapp3.1\Dynastream.Fit.Portable.pdb
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\obj\Debug\netcoreapp3.1\ActivityEncode.csprojAssemblyReference.cache
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\obj\Debug\netcoreapp3.1\ActivityEncode.AssemblyInfoInputs.cache
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\obj\Debug\netcoreapp3.1\ActivityEncode.AssemblyInfo.cs
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\obj\Debug\netcoreapp3.1\ActivityEncode.csproj.CoreCompileInputs.cache
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\obj\Debug\netcoreapp3.1\ActivityEncode.csproj.CopyComplete
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\obj\Debug\netcoreapp3.1\ActivityEncode.dll
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\obj\Debug\netcoreapp3.1\ActivityEncode.pdb
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Cookbook\ActivityEncode\obj\Debug\netcoreapp3.1\ActivityEncode.genruntimeconfig.cache

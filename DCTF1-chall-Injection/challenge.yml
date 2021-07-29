@@ -1,0 +1,20 @@
+name: "Injection"
+author: "ajelenc"
+category: Web
+
+description: |
+  Our local pharmacy exposed admin login to the public, can you exploit it?
+  http://dctf1-chall-injection.westeurope.azurecontainer.io:8080/
+
+value: 200
+type: standard
+
+flags:
+  - dctf{4ll_us3r_1nput_1s_3v1l}
+
+tags:
+  - web
+
+state: visible
+
+version: "0.1"

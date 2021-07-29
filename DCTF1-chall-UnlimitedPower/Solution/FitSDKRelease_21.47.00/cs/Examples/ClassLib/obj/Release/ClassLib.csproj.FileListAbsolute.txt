@@ -1,0 +1,7 @@
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Examples\ClassLib\obj\Release\ClassLib.csprojResolveAssemblyReference.cache
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Examples\ClassLib\obj\Release\Fit.dll
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Examples\ClassLib\Fit.xml
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Examples\ClassLib\obj\Release\Fit.pdb
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Fit.dll
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Fit.pdb
+C:\Users\lukad\Desktop\FitSDKRelease_21.47.00\cs\Fit.xml

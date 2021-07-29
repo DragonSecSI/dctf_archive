@@ -1,0 +1,21 @@
+name: "Secure API"
+author: "ajelenc"
+category: Web
+
+description: |
+  Frontend is overrated! API rocks!
+  http://dctf1-chall-secure-api.westeurope.azurecontainer.io:8080/
+
+value: 200
+type: standard
+
+flags:
+  - dctf{w34k_k3y5_4r3_n0t_0k4y}
+
+tags:
+  - web
+
+state: visible
+
+
+version: "0.1"

@@ -1,0 +1,24 @@
+name: "Behind the scenes"
+author: "Miha M."
+category: Misc
+
+description: Looks like a behind-the-scenes screenshot of the process behind this challenge was leaked. Can you use it to your advantage? (flag does not contain numbers)
+value: 400
+type: standard
+
+files:
+  - bts.png
+
+flags:
+  - dctf{GotAnyMorePixels}
+  - dctf{gotAnyMorePixels}
+
+tags:
+  - misc
+
+state: visible
+
+#hints:
+#  - Sadly, the image has a blurred password, but did that ever stop you?
+  
+version: "1.0"

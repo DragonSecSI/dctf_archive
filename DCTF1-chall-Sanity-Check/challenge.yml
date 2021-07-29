@@ -1,0 +1,20 @@
+name: "Sanity Check"
+author: "DragonSec SI"
+category: Welcome
+
+description: |
+  Take a look at the front page.
+
+value: 50
+type: standard
+
+flags:
+  - dctf{welc0m3_t0_dCTF}
+
+tags:
+  - welcome
+  - sanity
+
+state: visible
+  
+version: "0.1"

@@ -1,0 +1,20 @@
+name: "Simple web"
+author: "ajelenc"
+category: Web
+
+description: |
+  Time to warm up!
+  http://dctf1-chall-simple-web.westeurope.azurecontainer.io:8080
+
+value: 100
+type: standard
+
+flags:
+  - dctf{w3b_c4n_b3_fun_r1ght?}
+
+tags:
+  - web
+
+state: visible
+
+version: "0.1"

@@ -1,0 +1,24 @@
+name: "Very secure website"
+author: "Riggle"
+category: Web
+
+description: |
+  Some students have built their most secure website ever. Can you spot their mistake?
+  
+  http://dctf1-chall-very-secure-site.westeurope.azurecontainer.io/
+
+value: 200
+type: standard
+
+image: .
+
+flags:
+  - "dctf{It's_magic._I_ain't_gotta_explain_shit.}"
+
+tags:
+  - web
+  - php
+
+state: visible
+
+version: "1"

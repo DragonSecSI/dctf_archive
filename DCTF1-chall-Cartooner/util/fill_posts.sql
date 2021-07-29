@@ -1,0 +1,5 @@
+INSERT  INTO `posts` (`id`,`text`,`likes`,`username`,`dateposted`,`img`) VALUES ('1','Hey, Baby! Anybody ever tell you I have beautiful eyes?','60','johnnyb9','2021-03-15 02:34:39','/public/images/library/JohnnyBravo1.png');
+INSERT  INTO `posts` (`id`,`text`,`likes`,`username`,`dateposted`,`img`) VALUES ('2','A name so nice, you''ll say it twice','92','2moto','2021-04-16 22:08:26','/public/images/library/MotoMoto.png');
+INSERT  INTO `posts` (`id`,`text`,`likes`,`username`,`dateposted`,`img`) VALUES ('3','Whether you think you or you think you can''t, you''re right.','30','big_boy3','2021-04-07 01:11:20','/public/images/library/BossBaby.png');
+INSERT  INTO `posts` (`id`,`text`,`likes`,`username`,`dateposted`,`img`) VALUES ('4','It''s a beautiful day. But not as beautiful as me.','55','johnnyb9','2021-03-19 16:41:42','/public/images/library/JohnnyBravo2.jpg');
+INSERT  INTO `posts` (`id`,`text`,`likes`,`username`,`dateposted`,`img`) VALUES ('5','Focus. Speed. I am speed. One winner, forty-two losers.','60','mcstrela','2021-04-28 09:51:52','/public/images/library/LightningMcQueen.jpg');

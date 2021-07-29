@@ -1,0 +1,21 @@
+name: "Hotel ROP"
+author: "AlwaysGuilty"
+category: Pwn
+description: |
+  They say programmers' dream is California.
+  And because they need somewhere to stay, we've built a hotel!
+  nc ???
+value: 400
+type: standard
+files:
+  - app/hotel_rop
+flags:
+  - dctf{ch41n_0f_h0t3ls}
+tags:
+  - pwn
+#  - bof
+#  - rop
+state: visible
+#hints: 
+#  - Look at 0xdeadc0de
+version: "0.1"

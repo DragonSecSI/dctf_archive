@@ -1,0 +1,20 @@
+name: "Magic trick"
+author: "NOx"
+category: Pwn
+
+description: |
+  How about a magic trick
+  nc dctf-chall-magic-trick.westeurope.azurecontainer.io 7481 
+value: 300
+files:
+  - app/magic_trick
+
+flags:
+  - dctf{1_L1k3_M4G1c}
+
+tags:
+  - Pwn
+
+state: visible
+  
+version: "0.1"

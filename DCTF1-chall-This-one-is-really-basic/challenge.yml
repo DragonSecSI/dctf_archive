@@ -1,0 +1,21 @@
+name: "This one is really basic"
+author: "zeski"
+category: Crypto
+
+description: |
+  The answer to life, the universe, and everything.
+value: 300
+type: standard
+
+files:
+  - cipher.txt
+
+flags:
+  - dctf{Th1s_l00ks_4_lot_sm4ll3r_th4n_1t_d1d}
+
+tags:
+  - crypto
+
+state: visible
+  
+version: "0.1"

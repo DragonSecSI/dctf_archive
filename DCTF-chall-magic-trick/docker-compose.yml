@@ -1,0 +1,6 @@
+version: '3.6'
+services:
+  magic_trick:
+    build: .
+    ports:
+      - 40006:7481

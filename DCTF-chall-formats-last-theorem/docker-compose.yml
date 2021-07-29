@@ -1,0 +1,6 @@
+version: '3.6'
+services:
+  formats_last_theorem:
+    build: .
+    ports:
+      - 40002:7482

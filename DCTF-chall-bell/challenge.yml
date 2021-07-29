@@ -1,0 +1,21 @@
+name: "Bell"
+author: "Zen"
+category: Reverse
+
+description: |
+  Blaise's friends like triangles too!
+  nc dctf-chall-bell.westeurope.azurecontainer.io 5311
+value: 100
+
+files:
+  - app/bell
+
+flags:
+  - dctf{f1rst_step_t0wards_b3ll_l4bs}
+
+tags:
+  - Rev
+
+state: visible
+  
+version: "0.1"

@@ -1,0 +1,22 @@
+name: "Dragon"
+author: "Bumblebee"
+category: Misc
+
+description: |
+  Hiding in plain sight.
+  
+value: 100
+type: standard
+
+files:
+  - dragon.png
+
+flags:
+  - dctf{N0w_Y0u_s3e_m3}
+
+tags:
+  - stego
+
+state: visible
+  
+version: "0.1"

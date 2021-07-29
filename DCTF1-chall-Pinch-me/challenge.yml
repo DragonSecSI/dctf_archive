@@ -1,0 +1,16 @@
+name: "Pinch me"
+author: "AlwaysGuilty"
+category: Pwn
+description: |
+  This should be easy! 
+  nc ???
+value: 100
+type: standard
+files:
+  - app/pinch_me
+flags:
+  - dctf{y0u_kn0w_wh4t_15_h4pp3n1ng_b75?}
+tags:
+  - pwn
+state: visible
+version: "0.1"

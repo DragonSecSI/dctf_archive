@@ -1,0 +1,23 @@
+name: "Hidden message"
+author: "Riggle"
+category: Misc
+
+description: |
+  This image looks familiar...
+
+value: 100
+type: standard
+
+files:
+  - ./fri.png
+flags:
+  - dctf{sTeg0noGr4Phy_101}
+
+tags:
+  - misc
+  - image
+  - png
+
+state: visible
+
+version: "1"

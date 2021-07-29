@@ -1,0 +1,20 @@
+extends layout
+include partials/mixins
+
+block scripts
+    link(rel="stylesheet", href="/public/css/posts.css")
+
+block content
+    - var posts = posts?posts:[]
+    h3 Hi, #{user.name}! Welcome to Cartooner.
+    p Social media of all best known animated characters
+    if pagetext
+        p=pagetext
+    
+    for post in posts
+        +postCard(post)
+
+block footerScripts
+    script(src="/public/js/homepage.js")
+    if isAdmin
+        script(src="/public/js/querying.js")

@@ -1,0 +1,25 @@
+services:
+  mysqldb:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'rootpass321471db9916df1bf92b456779ea6a76d45'
+    volumes:
+      #- ./db:/var/lib/mysql
+      - ./util/init.sql:/docker-entrypoint-initdb.d/init.sql
+    #healthcheck:
+    #  test: "/usr/bin/mysql --user=root --password=rootpass321471db9916df1bf92b456779ea6a76d45 --execute \"SHOW DATABASES;\""
+    #  # test: "/usr/local/mysql/bin/mysql --user=foo --password=foo --execute \"SHOW DATABASES;\""
+    #  interval: 3s
+    #  timeout: 1s
+    #command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]
+  cartooner:
+    build: .
+    environment:
+      PORT: '9999'
+      PWN_URI: 'mysql://siteadmin:pwnuserpass123fd01602018b08e149a355d23cae54541@mysqldb:3306/cartoonerdb'
+      PWN_JWT_SECRET: 'rachel'
+    depends_on:
+      - mysqldb
+    ports:
+      - '80:9999'
