@@ -1,0 +1,24 @@
+name: "Company leak"
+author: "Riggle"
+category: Misc
+
+description: |
+  Someone hacked and leaked some very important data from an evil company. Find their dirty secrets and expose them!
+
+value: 500
+type: standard
+
+files:
+  - ./leaked.zip
+
+flags:
+  - dctf{wew_lad_y0u_aCtually_d1d_it}
+
+tags:
+  - misc
+  - zip
+  - leak
+
+state: visible
+
+version: "1"
